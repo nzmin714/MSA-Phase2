@@ -1,3 +1,4 @@
 export interface IUserInput {
-    SearchQuery: (string | null);
+    SearchQuery: (string |undefined );
+    SearchType: (string| undefined);
 }

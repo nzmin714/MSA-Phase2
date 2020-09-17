@@ -1,0 +1,16 @@
+.MediaCardContainer{
+    max-width: 12em;
+    margin: auto;
+}
+.MediaCardImage{
+    height: 45em !important;
+    max-width: 35em;
+}
+.MediaCardDescription{
+    height: 200px;
+    overflow-y: scroll;
+    overflow-wrap: break-word;
+}
+.MediaCardTitle{
+    font-size: 2em;
+}

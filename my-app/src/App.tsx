@@ -8,18 +8,29 @@ import SearchBar from './components/searchbar/searchbar';
 
 
 interface IUserInput {
-  SearchQuery: (string |undefined );
-  SearchType: (string| undefined);
+  SearchQuery: (string | undefined);
+  SearchType: (string | undefined);
 }
 
 function App() {
+
+  const [UserInput, setUserInput] = useState<IUserInput>({
+    SearchQuery: "",
+    SearchType: "movie"
+  });
+
+  function SetUserInput(a: IUserInput) {
+    setUserInput(a);    
+  }
+  
 
   return (
     <div className="App">
       <Header />
         <header className="App-header">
-
-         <MediaGrid />
+        <SearchBar SetUserInput={(a: IUserInput) => SetUserInput(a)}/>
+        <MediaGrid SearchQuery={UserInput.SearchQuery} SearchType={UserInput.SearchType} />
+        
 
         </header>
       <Footer />
