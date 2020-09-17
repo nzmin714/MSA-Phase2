@@ -28,7 +28,7 @@ function App() {
       <Header />
         <header className="App-header">
 
-          <p>Please show</p>
+          <p>Search...</p>
           <SearchBar SetUserInput={(a: IUserInput) => SetUserInput(a)}/>
           <MediaGrid SearchQuery={UserInput.SearchQuery} SearchType={UserInput.SearchType} />
         
