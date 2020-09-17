@@ -14,7 +14,7 @@ interface IState {
 
 interface IMediaGridProps {
     SearchQuery: (string | undefined);
-    SearchType: (string| undefined);
+    SearchType: (string | undefined);
 }
 
 

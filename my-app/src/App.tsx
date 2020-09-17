@@ -28,8 +28,8 @@ function App() {
     <div className="App">
       <Header />
         <header className="App-header">
-        <SearchBar SetUserInput={(a: IUserInput) => SetUserInput(a)}/>
-        <MediaGrid SearchQuery={UserInput.SearchQuery} SearchType={UserInput.SearchType} />
+          <SearchBar SetUserInput={(a: IUserInput) => SetUserInput(a)}/>
+          <MediaGrid SearchQuery={UserInput.SearchQuery} SearchType={UserInput.SearchType} />
         
 
         </header>
