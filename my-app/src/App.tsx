@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 import Footer from './components/footer/footer';
 import Header from './components/header/header';
@@ -28,6 +27,8 @@ function App() {
     <div className="App">
       <Header />
         <header className="App-header">
+
+          <p>Please show</p>
           <SearchBar SetUserInput={(a: IUserInput) => SetUserInput(a)}/>
           <MediaGrid SearchQuery={UserInput.SearchQuery} SearchType={UserInput.SearchType} />
         
